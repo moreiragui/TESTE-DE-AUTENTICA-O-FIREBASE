@@ -1,0 +1,77 @@
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>ADICIONAR DESPESA</title>
+        
+        <!--BOOTSTRAP-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+
+        <link rel="stylesheet" href="assets/css/estilo.css" type="text/css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+        <script src="assets/js/config.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="index.js"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html"><img src="imagens\logocanto.png" width="200px"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="add.html">Add</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="list.html">List</a>
+                            </li>
+                            <li class="nav-item">
+                                <button onclick="logout()" class="main-botao-cima">LogOff</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                      
+                      <div class="card" id="card-center">
+                        <div class="card-header">
+                          <b>ADICIONAR DESPESAS</b>
+                        </div>
+                        <div class="card-body">
+                          <form>
+                            <div class="form-group">
+                                <label for="description">Descrição</label>
+                                <input type="text" class="form-control" id="description" placeholder="Exemplo (Gasolina)">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Valor</label>
+                                <input type="number" class="form-control" id="amount" placeholder="R$10,00">
+                            </div>
+                            <div class="form-group">
+                                <label for="dateAdd">Data</label>
+                                <input type="date" class="form-control" id="dateAdd" placeholder="00/00/0000">
+                            </div>
+                            
+    
+                            <button type="submit" class="btn btn-primary" onclick="CadastrarDespesa();return false">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+
+                      
+
+                    </div>
+    </body>
+    <script type="javascript" src="assets/js/app.js"></script>
+</html>

@@ -36,6 +36,7 @@ function login(){
 
 function logout(){
     firebase.auth().signOut();
+    window.location.replace("index.html");
 }
 
 function create_account(){
@@ -48,6 +49,7 @@ function create_account(){
         var errorMessage = error.message;
         // ...
 
-        window.alert("Error: " + errorMessage)
+        window.alert("Error: " + errorMessage);
+        
       });
 }
